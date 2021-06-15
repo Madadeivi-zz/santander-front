@@ -9,7 +9,7 @@ git add .
 # Crear commit con su mensaje
 git commit -m "Aquí va el mensaje"
 
-#Agregar remoto "Solo primera conexión"
+# Agregar remoto "Solo primera conexión"
 git remote add origin https://github.com/Madadeivi/santander-front.git
 
 # Enviar commits al servidor de GitHub
