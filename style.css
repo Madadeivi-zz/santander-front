@@ -15,23 +15,47 @@ body {
   background-color: #fffbf7;
 }
 .header {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 40px 20px 0px 20px;
+  font-size: 0;
+  line-height: 45px;
 }
 li {
   display: inline;
+  margin: 0px 25px 0px 25px;
+  font-family: sans-serif;
+  color: #025157;
 }
 .header > * {
   display: inline-block;
+  font-size: 17px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45%;
 }
 .logo {
   width: 15%;
 }
 .navbar {
+    width: 60%;
+    text-align: left;
+    line-height: 45px;
 }
 .action {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+    width: 25%;
+    text-align: left;
+    line-height: 35px;
+    font-size: 14px;
+}
+.action > * {
+    margin: 0px 10px 0px 10px;
+}
+.action > button{
+    background-color:#67b54b;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    padding: 12px 14px 12px 14px;
+}
+.action > a{
+    color: #67b54b;
 }
