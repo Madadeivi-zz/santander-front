@@ -1,0 +1,27 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "git ini",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madadeivi/santander-front.git"
+  },
+  "keywords": [
+    "Santander",
+    "Front",
+    "html5"
+  ],
+  "author": "David Alan Dorantes Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madadeivi/santander-front/issues"
+  },
+  "homepage": "https://github.com/Madadeivi/santander-front#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
