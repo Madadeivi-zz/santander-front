@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matcha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <header class="header"><a href="./index.html" class="logo"><img
-                src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="header logo"></a>
+    <!-- <header class="header">
+        <a href="./index.html" class="logo"><img
+                src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="header logo" /></a>
         <nav class="navbar">
             <ul>
                 <li>Products</li>
@@ -23,24 +27,72 @@
             </ul>
         </nav>
         <div class="action"><a>Sign In</a><button>Start Free Trial</button></div>
-    </header>  
-    <form action="">
-        <p><label for="name">Nombre</label><input type="text" name="Nombre" id="name" placeholder="Nombre" required><br>
-        </p>
-        <p><label for="lasName">Apellido</label><input type="text" name="Apellido" id="lastName"
-                placeholder="Apellido"><br></p>
-        <p><label for="age">Edad</label><input type="number" name="Edad" id="age" placeholder="1"><br></p>
-        <p><label for="mail">Email</label><input type="email" name="Email" id="mail"
-                placeholder="correo@dominio.com"><br></p>
-        <p><label for="password">Password</label><input type="password" name="Password" id="password"
-                placeholder="escribe tu contraseña"><br></p>
-        <button type="submit" id="submit">Enviar &rarr;</button>
-    </form>
+    </header> -->
+    <!-- Nuestra barra de navegación comentada termina aquí -->
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a>Sign In</a>
+                <button>Start free trial</button>
+            </form>
+        </div>
+    </nav>
+    <article class="publish">
+        <form action="">
+            <div>
+                <label for="name">Nombre</label><input type="text" name="Nombre" id="name" placeholder="Nombre"
+                    required />
+            </div>
+            <div>
+                <label for="lasName">Apellido</label><input type="text" name="Apellido" id="lastName"
+                    placeholder="Apellido" />
+            </div>
+            <div>
+                <label for="age">Edad</label><input type="number" name="Edad" id="age" placeholder="1" />
+            </div>
+            <div>
+                <label for="mail">Email</label><input type="email" name="Email" id="mail"
+                    placeholder="correo@dominio.com" />
+            </div>
+            <div>
+                <label for="password">Password</label><input type="password" name="Password" id="password"
+                    placeholder="escribe tu contraseña" />
+            </div>
+            <div>
+                <button type="submit" id="submit">Enviar &rarr;</button>
+            </div>
+        </form>
+    </article>
     <figure class="banner">
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Pie de página Capterra">
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Pie de página Capterra" />
     </figure>
     <section class="publicidad">
-        <article>
+        <article class="explanatory-video">
             <video controls
                 poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
                 src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
@@ -50,21 +102,22 @@
                     src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
             </video>
             <img id="explanationVideo" src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
-                alt="See how it works">
+                alt="See how it works" />
         </article>
         <!-- Contenedor de publicidad -->
-        <article>
+        <article class="publish">
             <h3>Publish to your blog in minutes, not hours.</h3>
             <p>
-                Your blog is your most powerful asset to build, engage,
-                and retain a loyal audience. But you don’t have hours to create content that may or may not work. With
-                Matcha, instantly publish from our library of 10,000+ professionally written articles and build your
-                email
-                list faster with our powerful conversion tool.</p>
+                Your blog is your most powerful asset to build, engage, and retain a
+                loyal audience. But you don’t have hours to create content that may or
+                may not work. With Matcha, instantly publish from our library of
+                10,000+ professionally written articles and build your email list
+                faster with our powerful conversion tool.
+            </p>
             <form>
                 <p>Start publishing today:</p>
                 <div>
-                    <input type="text" name="emailPublishing" id="emailPublishing" placeholder="Enter email">
+                    <input type="text" name="emailPublishing" id="emailPublishing" placeholder="Enter email" />
                     <button id="buttonPublishing">Start My Trial</button>
                 </div>
             </form>
@@ -76,19 +129,21 @@
             <div class="feature-content">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png"
-                        alt="Publish icon">
+                        alt="Publish icon" />
                 </figure>
                 <figure>
                     <h3>Fill your blog with engaging articles.</h3>
-                    <p>Publish to your blog in less time than it takes to drink your
-                        morning coffee.</p>
+                    <p>
+                        Publish to your blog in less time than it takes to drink your
+                        morning coffee.
+                    </p>
                     <a href="">Publish instantly →</a>
                 </figure>
             </div>
             <div class="feature-image">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
-                        alt="Publish example">
+                        alt="Publish example" />
                 </figure>
             </div>
         </article>
@@ -96,17 +151,19 @@
             <div class="feature-content">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png"
-                        alt="Site traffic icon">
+                        alt="Site traffic icon" />
                 </figure>
                 <h3>Attract and engage more website visitors.</h3>
-                <p>Enhance your email, social media channels, and paid ads with content
-                    from Matcha.</p>
+                <p>
+                    Enhance your email, social media channels, and paid ads with content
+                    from Matcha.
+                </p>
                 <a href="">Get more site traffic →</a>
             </div>
             <div class="feature-image">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png"
-                        alt="Site traffic example">
+                        alt="Site traffic example" />
                 </figure>
             </div>
         </article>
@@ -114,24 +171,26 @@
             <div class="feature-content">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png"
-                        alt="Capture icon">
+                        alt="Capture icon" />
                 </figure>
                 <h3>Capture more emails with locked content.</h3>
-                <p>Convert 10x more of your traffic into subscribers and nurture them
-                    to a sale.</p>
+                <p>
+                    Convert 10x more of your traffic into subscribers and nurture them
+                    to a sale.
+                </p>
                 <a href="">Grow your email list faster →</a>
             </div>
             <div class="feature-image">
                 <figure>
                     <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png"
-                        alt="Capture example">
+                        alt="Capture example" />
                 </figure>
             </div>
         </article>
         <article class="feature-art">
             <div class="feature-content">
                 <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="ROI icon">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="ROI icon" />
                 </figure>
                 <h3>Optimize your blog’s performance.</h3>
                 <p>
@@ -142,11 +201,66 @@
             </div>
             <div class="feature-image">
                 <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png" alt="ROI example">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png" alt="ROI example" />
                 </figure>
             </div>
         </article>
     </section>
+    <section class="features">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">25%</div>
+        </div>
+    </section>
+    <section class="features">
+        <!-- Example split danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+    </section>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/pexels-alex-kozlov-8526963.jpg" class="d-block w-100" alt="pexels-alex-kozlov">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pexels-trarete-8502199.jpg" class="d-block w-100" alt="pexels-trarete-8502199">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pexels-шишкина-светлана-8467417.jpg" class="d-block w-100"
+                    alt="pexels-шишкина-светлана">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

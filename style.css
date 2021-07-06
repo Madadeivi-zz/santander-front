@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
 h1 {
   color: rgba(9, 43, 136, 0.89);
 }
@@ -14,12 +15,12 @@ b {
 body {
   background-color: #fffbf7;
 }
-.header {
+/* .header {
   margin: 40px 20px 0px 20px;
   font-size: 0;
   line-height: 45px;
-}
-li {
+} */
+/* li {
   display: inline;
   margin: 0px 25px 0px 25px;
   font-family: sans-serif;
@@ -31,15 +32,15 @@ li {
   vertical-align: middle;
   height: 100%;
   line-height: 45%;
-}
+} */
 .logo {
   width: 15%;
 }
-.navbar {
-    width: 60%;
+/* .navbar {
+    /* width: 60%;
     text-align: left;
     line-height: 45px;
-}
+}   */
 .action {
     width: 25%;
     text-align: left;
@@ -120,7 +121,7 @@ li {
 }
 .features{
   display: grid;
-  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   background-color: #025157;
   padding: 5% 10%;
 }
@@ -171,17 +172,65 @@ li {
   height: 100%;
 }
 
+.carousel-inner > .carousel-item > img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .navbar, .action{
+  /* .navbar, .action{
     display: none;
-  }
+  } */
   h1{
     font-size: 30px;
     color: blue;
   }
   .banner > img {
     width: 100%;
+  }
+  .publish > form {
+    flex-direction: column;
+  }
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+  }
+  .publish > form > div > input {
+    width: 65%;
+    height: 50%;
+  }
+  .publish > form > div > label {
+    width: 35%;
+  }
+  .publish > form > div > button {
+    width: 92%;
+    height: 50%;
+  }
+  .publicidad{
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .explanatory-video > video{
+    width: 100%;
+  }
+  .publish{
+    margin-top: 10px;
+  }
+  .publish > h3{
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feature-image {
+    display: none;
   }
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
