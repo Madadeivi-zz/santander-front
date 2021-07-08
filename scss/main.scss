@@ -124,3 +124,17 @@
     }
   }
 }
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (max-width: 576px){
+  .blog{
+    .row{
+      display: grid;
+      .col{
+        float: left;
+        width: 90%;
+        padding: 5% 0%;
+      }
+    }
+  }
+}
