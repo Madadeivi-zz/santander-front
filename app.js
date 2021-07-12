@@ -1,5 +1,11 @@
 $("[data-toggle=popover]").popover();
 
+var myCarousel = document.querySelector('#carouselExampleCaptions')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false
+})
+
 // Crear proyecto de node
 
 // npm init -> agregar la configuración

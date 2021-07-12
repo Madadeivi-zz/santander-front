@@ -1,72 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fffbf7;
-  font-family: "Open Sans", sans-serif;
+/* body {
+  background-color: #fff;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 h1 {
-  color: #025157;
-  font-family: "Alegreya", serif;
+  color: #DBDFC8;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 60px;
   margin-bottom: 24px;
 }
-h4 {
+h2,h3,h4 {
   color: #46484c;
-  font-family: "Slabo 27px", serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   margin-bottom: 30px;
-}
-
-.navbar {
-  background-color: #fffbf7;
-}
-.navbar-light .nav-item .nav-link {
-  color: #025157;
-}
-
-.navbar-light .navbar-toggler {
-  border-color: #025157;
-}
-
-.action {
-  text-align: right;
-  font-weight: 600;
-  font-size: 14px;
-}
-.action > * {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.action > button {
-  background-color: #67b54b;
-  border-radius: 5px;
-  border: 0;
-  color: white;
-  padding: 12px 14px 12px 14px;
-}
-.action > a {
-  color: #67b54b;
-}
-
-main {
-  margin-top: 285px;
-  text-align: center;
-}
-
-form {
-  height: 55px;
 }
 
 p {
   color: #8b8b8bcc;
   margin-top: 15px;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+main {
+  margin-top: 4em;
+  text-align: center;
+}
+
+form {
+  height: 55px;
 }
 
 input,
@@ -90,6 +58,43 @@ button {
   border-bottom-left-radius: 0;
   padding: 6px 20px;
   margin-left: -10px;
+}
+
+.navbar {
+  background-color: #DBDFC8;
+}
+.navbar-light .nav-item .nav-link{
+  color: #3A3532;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #3A3532;
+}
+
+.carousel-inner > .carousel-item > img {
+  max-height: 690px;
+  object-fit:cover;
+}
+
+.action {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+}
+.action > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.action > button {
+  background-color: #67b54b;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  padding: 12px 14px 12px 14px;
+}
+.action > a {
+  color: #67b54b;
 }
 
 .publicidad {
@@ -182,11 +187,6 @@ button {
   height: 100%;
 }
 
-.carousel-inner > .carousel-item > img {
-  max-height: 500px;
-  object-fit: cover;
-}
-
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
   main {
@@ -247,4 +247,4 @@ button {
 }
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
-}
+} */
