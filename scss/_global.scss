@@ -1,16 +1,57 @@
 /** _global.scss */
-$dark-green-title: #025157;
-$dark-green-text: #135359;
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+SC:wght@300;500&family=Ubuntu&display=swap');
+
+/** Paleta de colores */
 $white: #ffffff;
-$gray: #4a4a4a;
-$light-gray: #979797;
-$light-green: #67b54b;
+$gray: #f5f1f0;
+$brown: #3A3532;
+$dark-green: #313823;
+$medium-green: #788468;
+$light-green: #647256;
+$olive: #C4BEB4;
+$black: #000;
 
 /** fuentes */
-$font-title: "Alegreya", serif;
+$font-body: 'Noto Sans SC', sans-serif;
+$font-title: 'Fjalla One', sans-serif;
+$font-subtitle: 'Ubuntu', sans-serif;
 
 /** placeholders */
 %base-title {
     font-family: $font-title;
-    color: $dark-green-title;
+    color: $dark-green;
 }
+
+/** Carousel */
+$carousel-control-color:             $olive;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           40px;
+$carousel-indicator-height:          5px;
+$carousel-indicator-hit-area-height: 15px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $medium-green;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .8s ease;
+
+$carousel-caption-width:             90%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        8rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .8s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
